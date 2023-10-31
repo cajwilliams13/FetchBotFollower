@@ -1,0 +1,33 @@
+/*!
+@mainpage Sensors and Control Group Project 1: Fetch robot following a guider robot. 
+
+
+@section Program Overview
+
+
+This program is made for our Sensors and Controls group project. This program involves a control algorithm that allows the fetch robot to be able to follow the guider robot (turtlebot with qr code on it) around maintaining a safe distance. It will follow the turtlebot by utilising RGB camera to detect the qr code.
+To launch this simulation, follow the setup guide in the github first and then type in 
+"roslaunch assignment1 office.launch" to launch the environment and the robots.
+
+@subsection controller_node.cpp
+
+The controller_node.cpp is the main source file which is used directly in conjunction with the Vision VISP ROS package and Fetch robot. This contains the pose of the QR code, and if it is detected by the RGB camera on the Fetch robot.
+@section Structure of Code
+
+The structure of the code contains source, header and necessary and easy to understand naming for each files.
+
+@subsection  fetchmovement.h/ fetchmovement.cpp
+
+This Fetchmovement contains the necessary code for the fetch robot to move in any given direction, it calculates the required linear and angular velocitites based on the end goal location. The function also contains roll, pitch and yaw calculation derived from the pose of the robot.
+
+
+
+Code contributions can be seen below:
+James Silsby - 33% fetch movement and scanner 
+Connor Williams - 33% environment 
+akkarawat kaveewatcharanont- 33% troubleshooting and combining 
+
+
+@n By James Silsby, Connor Williams and akkarawat kaveewatcharanont
+
+*/
